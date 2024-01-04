@@ -24,21 +24,21 @@ public class VechicleTest {
     //- проверка того, что экземпляр объекта Car также является экземпляром транспортного средства; (instanceof)
     @Test
     void instanceOf() {
-        //Car car = new Car("Hunday", "Solaris", 2022);
+        //Car car = new Car("Nissan", "Almera", 2015);
         assertThat(car instanceof Vehicle);
     }
 
     //- проверка того, объект Car создается с 4-мя колесами
     @Test
     void WheelsCar() {
-        //Car car = new Car("Hunday", "Solaris", 2022);
+        //Car car = new Car("Nissan", "Almera", 2015);
         assertThat(car.getNumWheels()).isEqualTo(4);
     }
 
     // - проверка того, объект Motorcycle создается с 2-мя колесами
     @Test
     void MotorcycleWheels() {
-        //Motorcycle moto = new Motorcycle("Kawasaki", "Vulkan", 2020);
+        //Motorcycle moto = new Motorcycle("Moto", "Motoc", 2020);
         assertThat(moto.getNumWheels()).isEqualTo(2);
     }
 
